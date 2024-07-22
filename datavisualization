@@ -1,0 +1,25 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+data= pd.read_csv('householdtask3.csv')
+data.head(10)
+
+#Scatter plot with year against own 
+plt.scatter(data['year'],data['own'])
+plt.title('Scatter plot')
+plt.xlabel('year')
+plt.ylabel('own')
+plt.show()
+
+#Scatter plot with year against own 
+plt.scatter(data['year'],data['own'])
+plt.title('Scatter plot')
+plt.xlabel('year')
+plt.ylabel('own')
+plt.show()
+
+#Histogram
+plt.hist(data['income'])
+plt.title('Histogram')
+plt.show()
